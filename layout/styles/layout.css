@@ -158,55 +158,14 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 #socialise, #header, #intro, .overview, #breadcrumb, #container, #footer,
 	#copyright {
 	position: relative;
-	width: 960px;
+	width: 51%;
 	margin: 0 auto;
 	text-align: left;
 }
 
-/* ----------------------------------------------Social Bar------------------------------------- */
-#socialise {
-	display: none;
-	padding: 20px 0;
-}
-
-#socialise ul {
-	display: inline;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 20px;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-#socialise li {
-	display: block;
-	float: left;
-	margin: 0 103px 0 0;
-	text-align: center;
-}
-
-#socialise li span {
-	display: block;
-	margin: 8px 0 0 0;
-}
-
-#socialise li.last {
-	margin-right: 0;
-}
-
-#socialise a {
-	color: #333333;
-	background-color: #222222;
-}
-
-#socialise a:hover {
-	color: #CCCCCC;
-	background-color: #222222;
-}
-
 /* ----------------------------------------------Header------------------------------------- */
 #header {
-	padding: 0 0 5px 0;
+	padding: 0 0 0.4% 0;
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
@@ -218,20 +177,20 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 #header #logo {
 	display: block;
 	float: left;
-	width: 500px;
-	margin-top: 2px;
+	width: 35%;
+	margin-top: 0.1%;
 }
 
 #header h1 {
-	margin: 0 0 7px 0;
-	font-size: 40px;
+	margin: 0 0 2% 0;
+	font-size: 35px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #header h1 a {
 	color: #F3F3F3;
 	background-color: #222222;
-	width: 400px;
+	width: 33%;
 }
 
 #header p.toggler {
@@ -240,8 +199,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 
 #header p.toggler a {
 	display: block;
-	width: 180px;
-	padding: 5px 0;
+	width: 20%;
+	padding: 0.9% 0;
 	text-align: center;
 	text-transform: uppercase;
 	color: #666666;
@@ -250,13 +209,13 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 
 /* ----------------------------------------------Homepage Intro------------------------------------- */
 #intro {
-	padding: 20px 0 10px 0;
+	padding: 1% 0 0.9% 0;
 }
 
 #intro h2 {
-	margin: 0 0 15px 0;
-	padding: 0 0 8px 0;
-	border-bottom: 1px dotted #333333;
+	margin: 0 0 5% 0;
+	padding: 0 0 4% 0;
+	border-bottom: 0.3% dotted #333333;
 }
 
 #intro ul {
@@ -266,7 +225,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 }
 
 #intro li {
-	margin-bottom: 5px;
+	margin-bottom: 0.5%;
 }
 
 #intro li.last {
@@ -276,47 +235,28 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 #intro .box {
 	display: block;
 	float: right;
-	width: 250px;
-	margin: 0 0 0 25px;
+	width: 25%;
+	margin: 0 0 0 2%;
 	padding: 0;
 }
 
 #intro .box1 {
 	display: block;
 	float: left;
-	width: 410px;
+	width: 36%;
 	line-height: 1.7em;
-}
-
-/* ----------------------------------------------BreadCrumb------------------------------------- */
-#breadcrumb {
-	padding: 20px 0;
-}
-
-#breadcrumb ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#breadcrumb ul li {
-	display: inline;
-}
-
-#breadcrumb ul li.current a {
-	text-decoration: underline;
 }
 
 /* ----------------------------------------------Portfolio Overview------------------------------------- */
 div.overview {
-	padding: 20px 0 0 0;
+	padding: 1.5% 0 0 0;
 }
 
 .overview h1#title {
 	display: block;
 	width: 100%;
-	margin-top: -20px;
-	font-size: 180px;
+	margin-top: -1.9%;
+	font-size: 15%;
 	letter-spacing: -2px;
 	color: #DDDDDD;
 	background-color: #FFFFFF;
@@ -331,8 +271,8 @@ div.overview {
 .overview li {
 	display: block;
 	float: left;
-	width: 296px;
-	margin: 0 36px 36px 0;
+	width: 30%;
+	margin: 0 4% 3% 0;
 	padding: 0;
 }
 
@@ -341,7 +281,7 @@ div.overview {
 }
 
 .wrapper .overview h2, .overview p, .overview div {
-	margin: 0 0 15px 0;
+	margin: 0 0 6% 0;
 	padding: 0;
 }
 
@@ -351,9 +291,9 @@ div.overview {
 
 .overview div.imgholder {
 	display: block;
-	width: 284px;
-	height: 144px;
-	padding: 5px;
+	width: 20%;
+	height: 15%;
+	padding: 1.7%;
 	border: 1px solid #DDDDDD;
 }
 
@@ -368,7 +308,7 @@ div.overview {
 
 /* ----------------------------------------------Content------------------------------------- */
 #container {
-	padding: 30px 0;
+	padding: 1% 0;
 	line-height: 1.4em;
 }
 
@@ -382,7 +322,7 @@ div.overview {
 #content {
 	display: block;
 	float: left;
-	width: 600px;
+	width: 50%;
 }
 
 /* Comments */
