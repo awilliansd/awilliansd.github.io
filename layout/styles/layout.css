@@ -158,7 +158,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5,
 #socialise, #header, #intro, .overview, #breadcrumb, #container, #footer,
 	#copyright {
 	position: relative;
-	width: 51%;
+	width: 52%;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -319,210 +319,15 @@ div.overview {
 	border-bottom: 1px dotted #CCCCCC;
 }
 
+#container p {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
 #content {
 	display: block;
 	float: left;
-	width: 50%;
-}
-
-/* Comments */
-#comments {
-	margin-bottom: 40px;
-}
-
-#comments .commentlist {
-	margin: 0;
-	padding: 0;
-}
-
-#comments .commentlist ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#comments .commentlist li.comment_odd, #comments .commentlist li.comment_even
-	{
-	margin: 0 0 10px 0;
-	padding: 15px;
-	list-style: none;
-}
-
-#comments .commentlist li.comment_odd {
-	color: #666666;
-	background-color: #F7F7F7;
-}
-
-#comments .commentlist li.comment_odd a {
-	color: #60E1FD;
-	background-color: #F7F7F7;
-}
-
-#comments .commentlist li.comment_even {
-	color: #666666;
-	background-color: #E8E8E8;
-}
-
-#comments .commentlist li.comment_even a {
-	color: #60E1FD;
-	background-color: #E8E8E8;
-}
-
-#comments .commentlist .author .name {
-	font-weight: bold;
-}
-
-#comments .commentlist .submitdate {
-	font-size: smaller;
-}
-
-#comments .commentlist p {
-	margin: 10px 5px 10px 0;
-	padding: 0;
-	font-weight: normal;
-	text-transform: none;
-}
-
-#comments .commentlist li .avatar {
-	float: right;
-	border: 1px solid #EEEEEE;
-	margin: 0 0 0 10px;
-}
-
-/* ----------------------------------------------Column------------------------------------- */
-#column {
-	display: block;
-	float: right;
-	width: 300px;
-}
-
-#column .holder, #column #featured {
-	display: block;
-	width: 300px;
-	margin-bottom: 20px;
-}
-
-#column .holder h2.title {
-	display: block;
-	width: 100%;
-	height: 65px;
-	margin: 0;
-	padding: 15px 0 0 0;
-	font-size: 20px;
-	line-height: normal;
-	border-bottom: 1px dashed #666666;
-}
-
-#column .holder h2.title img {
-	float: left;
-	margin: -15px 8px 0 0;
-	padding: 5px;
-	border: 1px solid #666666;
-}
-
-#column div.imgholder {
-	display: block;
-	width: 290px;
-	margin: 0 0 10px 0;
-	padding: 4px;
-	color: #666666;
-	background-color: #FFFFFF;
-	border: 1px solid #CCCCCC;
-}
-
-#column .holder p.readmore {
-	display: block;
-	width: 100%;
-	font-weight: bold;
-	text-align: right;
-	line-height: normal;
-}
-
-/* Featured Block */
-#column #featured a {
-	color: #666666;
-	background-color: #F9F9F9;
-}
-
-#column #featured ul, #column #featured h2, #column #featured p {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#column #featured a {
-	color: #60E1FD;
-	background-color: #F9F9F9;
-}
-
-#column #featured li {
-	display: block;
-	width: 250px;
-	margin: 0;
-	padding: 20px 25px;
-	color: #666666;
-	background-color: #F9F9F9;
-}
-
-#column #featured li p.imgholder {
-	display: block;
-	width: 240px;
-	height: 90px;
-	margin: 20px 0 15px 0;
-	padding: 4px;
-	border: 1px solid #CCCCCC;
-}
-
-#column #featured li h2 {
-	margin: 0;
-	padding: 0 0 14px 0;
-	font-weight: normal;
-	font-family: Georgia, "Times New Roman", Times, serif;
-	line-height: normal;
-	border-bottom: 1px dashed #666666;
-}
-
-#column #featured p.readmore {
-	display: block;
-	width: 100%;
-	margin-top: 15px;
-	font-weight: bold;
-	text-align: right;
-	line-height: normal;
-}
-
-#column #latestnews {
-	display: block;
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-#column #latestnews li {
-	display: block;
-	margin: 0 0 20px 0;
-	padding: 0 0 15px 0;
-	border-bottom: 1px dotted #CCCCCC;
-}
-
-#column #latestnews li.last {
-	margin-bottom: 0;
-}
-
-#column #latestnews p {
-	margin: 0 0 5px 0;
-	padding: 0;
-}
-
-#column #latestnews p.readmore {
-	margin: 0;
-	padding: 0;
-}
-
-#column #latestnews .imgl {
-	margin: 0 10px 10px 0;
-	padding: 4px;
+	width: 65%;
 }
 
 /* ----------------------------------------------Footer------------------------------------- */
@@ -578,7 +383,7 @@ table.socialMedia {
 
 /* ----------------------------------------------Copyright------------------------------------- */
 #copyright {
-	padding: 15px 0;
+	padding: 10px 0;
 }
 
 #copyright p {
