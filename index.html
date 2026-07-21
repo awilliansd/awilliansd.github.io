@@ -1,77 +1,321 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alessandro Dias | Desenvolvedor & Engenheiro Digital</title>
+  <meta name="description" content="Currículo online de Alessandro Willian de Souza Dias - Engenheiro de Computação, Tech Lead e Especialista em IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <img src="IMG_20230521_005913_992-modified.png" alt="Foto de Alessandro" class="profile">
-    <h1>Alessandro Willian de Souza Dias</h1>
-    <p>Engenheiro de Computação • Especialista em IA • Tech Lead • Full Stack • DevOps</p>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="logo" aria-label="Home">&lt;aw/&gt;</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#habilidades" data-i18n="nav.skills">Habilidades</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#depoimentos" data-i18n="nav.recommendations">Depoimentos</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Alternar idioma">PT</button>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Abrir menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
   </header>
 
-  <nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
   <main>
-    <section id="sobre">
-      <h2>Sobre</h2>
-      <p>Sou um profissional com mais de 18 anos de experiência em desenvolvimento de software, com formação em Engenharia da Computação e pós-graduações em Desenvolvimento de Produtos Eletrônicos e Cybersegurança. Atuo como Tech Lead na Ambev Tech, com foco em .NET, Azure, AKS/Kubernetes, integrações e boas práticas de engenharia como DDD, TDD e BDD.</p>
+    <section class="hero" id="inicio">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-greeting" data-i18n="hero.greeting">Olá, eu sou</p>
+          <h1>Alessandro Willian de Souza Dias</h1>
+          <p class="hero-title" data-i18n="hero.title">Engenheiro de Computação • Especialista em IA • Tech Lead • Full Stack • DevOps</p>
+          <p class="hero-summary" data-i18n="hero.summary">Mais de 18 anos construindo software robusto, escalável e bem arquitetado. Liderando times e entregando valor com .NET, Azure, Kubernetes e boas práticas de engenharia.</p>
+          <div class="hero-buttons">
+            <a href="Alessandro%20Willian%20-%20CV%202025.pdf" download class="btn btn-primary">
+              <i class="fas fa-download"></i> <span data-i18n="hero.downloadPt">CV em Português</span>
+            </a>
+            <a href="Alessandro%20Willian%20-%20Resume%202025.pdf" download class="btn btn-secondary">
+              <i class="fas fa-download"></i> <span data-i18n="hero.downloadEn">CV in English</span>
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://linkedin.com/in/awilliansd" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/awilliansd" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:awilliansd@protonmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-frame">
+            <img src="IMG_20230521_005913_992-modified.png" alt="Foto de Alessandro Dias" class="profile">
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </section>
 
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <ul>
-        <li>.NET (6 a 9), C#, ASP.NET, DDD, TDD, BDD</li>
-        <li>Azure, AKS, Kubernetes, Docker, DevOps Pipelines</li>
-        <li>Integrações com APIs, SignalR, gRPC, RabbitMQ</li>
-        <li>Angular, React Native, Razor, Ionic, HTML/CSS</li>
-        <li>Python, NodeJS, Lua, SQL Server, MongoDB, PostgreSQL</li>
-        <li>Eletrônica embarcada, ucLinux, Yocto, MIPS</li>
-        <li>Segurança da informação, Ethical Hacking</li>
-      </ul>
+    <section id="sobre" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.aboutTag">Sobre</span>
+          <h2 data-i18n="section.aboutTitle">Quem sou eu</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <i class="fas fa-code"></i>
+            <h3 data-i18n="about.dev.title">Desenvolvedor</h3>
+            <p data-i18n="about.dev.text">Apaixonado por código limpo, arquitetura sólida e soluções que escalam. Experiência em .NET, C#, cloud e integrações complexas.</p>
+          </div>
+          <div class="about-card">
+            <i class="fas fa-users-cog"></i>
+            <h3 data-i18n="about.lead.title">Líder Técnico</h3>
+            <p data-i18n="about.lead.text">Tech Lead na Ambev Tech, conduzindo times em projetos críticos com foco em qualidade, mentoria e entrega contínua.</p>
+          </div>
+          <div class="about-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3 data-i18n="about.security.title">Segurança & Inovação</h3>
+            <p data-i18n="about.security.text">Pós-graduação em Cybersegurança e Ethical Hacking, aplicando segurança por design em todo o ciclo de desenvolvimento.</p>
+          </div>
+        </div>
+        <p class="about-text" data-i18n="about.main">Sou um profissional com mais de 18 anos de experiência em desenvolvimento de software, com formação em Engenharia da Computação e pós-graduações em Desenvolvimento de Produtos Eletrônicos e Cybersegurança. Atuo como Tech Lead na Ambev Tech, com foco em .NET, Azure, AKS/Kubernetes, integrações e boas práticas de engenharia como DDD, TDD e BDD.</p>
+      </div>
     </section>
 
-    <section id="experiencia">
-      <h2>Experiência Profissional</h2>
-      <p><strong>Tech Lead</strong> @ Ambev Tech (2022 - atual)<br>Responsável por liderança técnica em projetos com .NET 9, AKS, Rancher, PostgreSQL e Service Bus.</p>
-      <p><strong>Software Engineer</strong> @ Ambev Tech (2020 - 2022)<br>Back-end em .NET 6, integrações com Azure e pipelines CI/CD.</p>
-      <p><strong>Full Stack Engineer</strong> @ Mil Tec (2018 - 2020)<br>Apps web/mobile para rastreabilidade animal (MS), usando .NET Core, React Native e MongoDB.</p>
-      <p><strong>Product Dev. Engineer</strong> @ Intelbras (2014 - 2015)<br>Firmware ucLinux para Gateway de integração CFTV/Alarmes, com C/C++, Lua e Angular.js.</p>
+    <section id="habilidades" class="section reveal alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.skillsTag">Habilidades</span>
+          <h2 data-i18n="section.skillsTitle">Stack Tecnológico</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3 data-i18n="skills.backend">Back-end</h3>
+            <div class="skill-tags">
+              <span>.NET 6/7/8/9</span><span>C#</span><span>ASP.NET Core</span><span>DDD</span><span>TDD</span><span>BDD</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skills.cloud">Cloud & DevOps</h3>
+            <div class="skill-tags">
+              <span>Azure</span><span>AKS</span><span>Kubernetes</span><span>Docker</span><span>Rancher</span><span>CI/CD</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skills.integration">Integrações & Mensageria</h3>
+            <div class="skill-tags">
+              <span>APIs REST</span><span>SignalR</span><span>gRPC</span><span>RabbitMQ</span><span>Service Bus</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skills.frontend">Front-end & Mobile</h3>
+            <div class="skill-tags">
+              <span>Angular</span><span>React Native</span><span>Razor</span><span>Ionic</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skills.data">Dados & Linguagens</h3>
+            <div class="skill-tags">
+              <span>SQL Server</span><span>PostgreSQL</span><span>MongoDB</span><span>Python</span><span>Node.js</span><span>Lua</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3 data-i18n="skills.embedded">Embarcados & Segurança</h3>
+            <div class="skill-tags">
+              <span>ucLinux</span><span>Yocto</span><span>MIPS</span><span>Ethical Hacking</span><span>Cybersegurança</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="projetos">
-      <h2>Projetos e Prêmios</h2>
-      <ul>
-        <li><strong>AI Interaction Hub</strong> – Hub unificado de IAs via Electron</li>
-        <li><strong>1º lugar – Hackathon Ambev Tech 2023</strong> – Otimização de workflows com automação de tarefas</li>
-        <li><strong>1º lugar – Hackathon Governo 2019</strong> – Plataforma cívica contra corrupção</li>
-        <li><strong>Monitor GitHub Releases</strong> – Ferramenta para monitoramento de downloads com alertas</li>
-        <li><strong>Nextcloud Server</strong> – Nuvem privada com domínio e HTTPS próprios</li>
-      </ul>
+    <section id="experiencia" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.experienceTag">Experiência</span>
+          <h2 data-i18n="section.experienceTitle">Trajetória Profissional</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2022 - <span data-i18n="experience.present">atual</span></span>
+              <h3>Tech Lead</h3>
+              <p class="timeline-company">Ambev Tech</p>
+              <p data-i18n="experience.ambevTechLead">Responsável por liderança técnica em projetos com .NET 9, AKS, Rancher, PostgreSQL e Service Bus. Condução de arquitetura, code reviews, mentoria e entrega de soluções escaláveis.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2020 - 2022</span>
+              <h3>Software Engineer</h3>
+              <p class="timeline-company">Ambev Tech</p>
+              <p data-i18n="experience.ambevEngineer">Back-end em .NET 6, integrações com Azure e pipelines CI/CD. Desenvolvimento de APIs robustas e serviços críticos para o negócio.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2018 - 2020</span>
+              <h3>Full Stack Engineer</h3>
+              <p class="timeline-company">Mil Tec</p>
+              <p data-i18n="experience.milTec">Apps web/mobile para rastreabilidade animal (MS), usando .NET Core, React Native e MongoDB. Soluções de ponta a ponta, do backend ao campo.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">2014 - 2015</span>
+              <h3>Product Dev. Engineer</h3>
+              <p class="timeline-company">Intelbras</p>
+              <p data-i18n="experience.intelbras">Firmware ucLinux para Gateway de integração CFTV/Alarmes, com C/C++, Lua e Angular.js. Experiência prática com sistemas embarcados e IoT.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contato">
-      <h2>Contato</h2>
-      <p>Email: <a href="mailto:awilliansd@protonmail.com">awilliansd@protonmail.com</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/awilliansd" target="_blank">linkedin.com/in/awilliansd</a></p>
-      <p>GitHub: <a href="https://github.com/awilliansd" target="_blank">github.com/awilliansd</a></p>
+    <section id="projetos" class="section reveal alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.projectsTag">Projetos</span>
+          <h2 data-i18n="section.projectsTitle">Destaques & Conquistas</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-header">
+              <i class="fas fa-robot"></i>
+              <div class="project-links">
+                <a href="https://github.com/awilliansd/ai-interaction-hub" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>AI Interaction Hub</h3>
+            <p data-i18n="projects.aiHub">Hub unificado de IAs via Electron. Interface centralizada para interagir com múltiplos modelos de inteligência artificial.</p>
+            <div class="project-tags"><span>Electron</span><span>JavaScript</span><span>IA</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-header">
+              <i class="fas fa-dharmachakra"></i>
+              <div class="project-links">
+                <a href="https://github.com/awilliansd/dockyard" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <h3>Dockyard</h3>
+            <p data-i18n="projects.dockyard">Ferramenta para gerenciamento e monitoramento de containers e ambientes Docker de forma prática e visual.</p>
+            <div class="project-tags"><span>Docker</span><span>Containers</span><span>DevOps</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-header">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 data-i18n="projects.hackathonAmbevTitle">1º lugar – Hackathon Ambev Tech 2023</h3>
+            <p data-i18n="projects.hackathonAmbev">Otimização de workflows com automação de tarefas. Solução vencedora desenvolvida em equipe durante o hackathon interno.</p>
+            <div class="project-tags"><span>Automação</span><span>Workflow</span><span>Inovação</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-header">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 data-i18n="projects.hackathonGovTitle">1º lugar – Hackathon Governo 2019</h3>
+            <p data-i18n="projects.hackathonGov">Plataforma cívica contra corrupção. Projeto vencedor que conectou cidadãos e dados públicos de forma transparente.</p>
+            <div class="project-tags"><span>Cidadania</span><span>Dados Abertos</span><span>Impacto Social</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.recommendationsTag">Depoimentos</span>
+          <h2 data-i18n="section.recommendationsTitle">Recomendações</h2>
+        </div>
+        <div class="recommendations-grid">
+          <blockquote class="recommendation-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p data-i18n="rec.joao">I worked with Alessandro for 2 years and can say he is an excellent professional, always focused on improving the systems under his domain. Constantly seeking knowledge and innovation 💡. Strong personality, always puts his point of view forward for the common good.</p>
+            <footer>
+              <strong>João Paulo Aguilera de Paula</strong>
+              <span>TECHN.-ANALYSTE EN INFORMATIQUE · Ville de Québec</span>
+            </footer>
+          </blockquote>
+          <blockquote class="recommendation-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p data-i18n="rec.hugo">Alessandro is an excellent professional. Since he joined our team, he has always sought to bring solutions aimed at improving the technical quality of our applications and the team's development process. Very engaged and committed to work, always seeking knowledge beyond what is proposed on a daily basis.</p>
+            <footer>
+              <strong>Hugo Jorge Bueno Nantes</strong>
+              <span>Squad Lead | Scrum Master | Agile Coach</span>
+            </footer>
+          </blockquote>
+          <blockquote class="recommendation-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p data-i18n="rec.robson">I worked with Willian for just over two years at DígithoBrasil. During this time, I got to know a dedicated professional, focused on work, well informed about market trends and always looking to learn more. He never held back, expressing his opinions sincerely and directly. I recommend!</p>
+            <footer>
+              <strong>Robson Castilho</strong>
+              <span>Tech Lead | Senior Software Engineer | Software Architecture</span>
+            </footer>
+          </blockquote>
+          <blockquote class="recommendation-card">
+            <i class="fas fa-quote-left quote-icon"></i>
+            <p data-i18n="rec.edgar">Willian is a very sincere and transparent person, unmatched in teamwork. Studious and a researcher, always seeks professional growth, in addition to being very professional.</p>
+            <footer>
+              <strong>Edgar Corrêa</strong>
+              <span>Senior Developer | Software Development</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section reveal alt-bg">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section.contactTag">Contato</span>
+          <h2 data-i18n="section.contactTitle">Vamos conversar</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:awilliansd@protonmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>awilliansd@protonmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/awilliansd" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>linkedin.com/in/awilliansd</span>
+          </a>
+          <a href="https://github.com/awilliansd" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>github.com/awilliansd</span>
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Alessandro Dias. Disponível em Português e Inglês.</p>
-    <p><a href="Alessandro%20Willian%20-%20CV%202025.pdf" download>Download CV em português (PDF)</a></p>
-    <p><a href="Alessandro%20Willian%20-%20Resume%202025.pdf" download>Download CV em Inglês (PDF)</a></p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Alessandro Dias. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <div class="footer-downloads">
+        <a href="Alessandro%20Willian%20-%20CV%202025.pdf" download><i class="fas fa-file-pdf"></i> <span data-i18n="footer.cvPt">CV em Português</span></a>
+        <a href="Alessandro%20Willian%20-%20Resume%202025.pdf" download><i class="fas fa-file-pdf"></i> <span data-i18n="footer.cvEn">CV in English</span></a>
+      </div>
+    </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
 </body>
 </html>
