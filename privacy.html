@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidade — Photos MCP</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.65;
+      color: #1c1c1e;
+      background: #fafafa;
+    }
+    main { max-width: 760px; margin: 0 auto; padding: 48px 24px 72px; }
+    h1 { font-size: 1.9rem; margin-bottom: .25rem; }
+    h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+    .meta { color: #6b6b70; font-size: .9rem; margin-top: 0; }
+    ul { padding-left: 1.2rem; }
+    code { background: rgba(0,0,0,.06); padding: .1em .35em; border-radius: 4px; font-size: .88em; }
+    a { color: #0b57d0; }
+    table { width: 100%; border-collapse: collapse; font-size: .93rem; margin-top: .5rem; }
+    th, td { border: 1px solid rgba(0,0,0,.12); padding: .55rem .7rem; text-align: left; vertical-align: top; }
+    th { background: rgba(0,0,0,.04); }
+    .card { background: #fff; border: 1px solid rgba(0,0,0,.1); border-radius: 10px; padding: 1.25rem 1.5rem; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8ea; background: #121214; }
+      .card { background: #1b1b1e; border-color: rgba(255,255,255,.1); }
+      th { background: rgba(255,255,255,.06); }
+      th, td { border-color: rgba(255,255,255,.14); }
+      a { color: #8ab4f8; }
+      code { background: rgba(255,255,255,.08); }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Política de Privacidade</h1>
+    <p class="meta">Photos MCP · Última atualização: 18 de novembro de 2026</p>
+
+    <p>
+      Esta página descreve como o aplicativo <strong>Photos MCP</strong> trata seus dados.
+      Ele é um cliente local das APIs do Google que roda apenas na sua própria máquina,
+      integrado a assistentes de IA via Model Context Protocol (MCP).
+    </p>
+
+    <h2>1. Quais dados o aplicativo acessa</h2>
+    <p>
+      O acesso acontece exclusivamente por meio de permissões (escopos) OAuth que
+      <strong>você aprova na tela de consentimento do Google</strong> e que podem ser
+      revogadas a qualquer momento:
+    </p>
+    <table>
+      <thead>
+        <tr><th>Permissão</th><th>O que permite</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>photospicker.mediaitems.readonly</code></td>
+          <td>Ler apenas as fotos e vídeos que <strong>você escolhe manualmente</strong> no seletor oficial do Google Photos.</td>
+        </tr>
+        <tr>
+          <td><code>photoslibrary.appendonly</code></td>
+          <td>Criar álbuns e enviar novas fotos/vídeos para a sua biblioteca.</td>
+        </tr>
+        <tr>
+          <td><code>photoslibrary.readonly.appcreateddata</code></td>
+          <td>Ler somente os itens <strong>criados pelo próprio aplicativo</strong>.</td>
+        </tr>
+        <tr>
+          <td><code>photoslibrary.edit.appcreateddata</code></td>
+          <td>Editar descrições e a composição de álbuns <strong>criados pelo próprio aplicativo</strong>.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>2. O que o aplicativo NÃO acessa</h2>
+    <ul>
+      <li>Não lê a sua biblioteca inteira de fotos. Desde abril de 2025 o Google não permite esse acesso a aplicativos de terceiros.</li>
+      <li>Não acessa Gmail, Drive, Calendário ou qualquer outro serviço do Google.</li>
+      <li>Não excluir fotos: a API do Google não oferece nenhuma operação de exclusão.</li>
+      <li>Não compartilha, vende ou envia suas fotos para terceiros.</li>
+    </ul>
+
+    <h2>3. Como os dados são usados</h2>
+    <p>
+      Os dados retornados pelas APIs do Google são usados <strong>somente</strong> para
+      atender ao comando que você pediu ao assistente: listar itens escolhidos,
+      criar ou renomear um álbum, enviar um arquivo, gerar uma descrição.
+      Não há analytics, telemetria, rastreamento ou treinamento de modelos.
+    </p>
+
+    <h2>4. Onde os dados ficam armazenados</h2>
+    <ul>
+      <li>Suas credenciais OAuth (<code>client ID</code>, <code>client secret</code> e <code>refresh token</code>) ficam gravadas <strong>apenas no arquivo de configuração do OpenCode</strong> desta máquina (<code>~/.config/opencode/opencode.json</code>), sem cópia em servidores.</li>
+      <li>Arquivos enviados ou baixados permanecem no seu disco local.</li>
+      <li>A única comunicação de rede é feita diretamente para as APIs oficiais do Google (<code>googleapis.com</code> e <code>accounts.google.com</code>). Não existe servidor intermediário do aplicativo.</li>
+    </ul>
+
+    <h2>5. Compartilhamento</h2>
+    <p>
+      Nenhum dado é compartilhado com terceiros. O aplicativo não possui backend,
+      banco de dados em nuvem, contas de usuário nem cookies próprios.
+    </p>
+
+    <h2>6. Retenção e revogação</h2>
+    <ul>
+      <li>Para revogar o acesso do aplicativo: acesse
+        <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>,
+        encontre “Photos MCP” e remova o acesso. Isso invalida imediatamente as credenciais.</li>
+      <li>Fotos enviadas por este aplicativo permanecem na sua biblioteca do Google Photos até você removê-las manualmente no app do Google, pois a API não oferece exclusão.</li>
+      <li>As permissões valem enquanto o aplicativo mantiver acesso — não há expiração automática programada para uso próprio publicado.</li>
+    </ul>
+
+    <h2>7. Privacidade do Google</h2>
+    <p>
+      As chamadas às APIs do Google também são regidas pela
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.
+      Este aplicativo é um projeto pessoal, não afiliado, endossado ou desenvolvido pelo Google LLC.
+    </p>
+
+    <h2>8. Contato</h2>
+    <p>
+      Dúvidas sobre esta política ou sobre os dados tratados pelo aplicativo:
+      <a href="mailto:awilliansd@gmail.com">awilliansd@gmail.com</a>.
+    </p>
+  </main>
+</body>
+</html>
